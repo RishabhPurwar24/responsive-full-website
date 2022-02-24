@@ -20,6 +20,7 @@ img {
   max-height: 300px;
   width: 100%;
   object-fit: cover;
+  margin-bottom: 2em;
 }
 
 /* =================
@@ -37,6 +38,10 @@ h3 {
 h1 {
   font-size: 2rem;
   margin: 0;
+}
+
+h3 {
+  color: #1792d2;
 }
 
 a {
@@ -93,6 +98,10 @@ strong {
 .widget-title {
   font-weight: 700;
   font-family: "Ubuntu", sans-serif;
+}
+
+.widget-recent-post-title {
+  color: #143774;
 }
 
 /* =================
