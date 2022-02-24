@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ------------------------- TYPOGRAPHY -------------------------- */
+
+h1 {
+  font-size: 2rem;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+}
+
+p {
+  font-size: 0.75rem;
+  font-family: "Ubuntu", sans-serif;
+  color: #1792d2;
+}
+
+nav li {
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* ----------------------------------------------------------------- */
+
+header {
+  background-color: #f8f8f8;
+  padding: 2em 0;
+  margin: 1em;
+  /* border: 1px solid magenta; */
+}
+
+.container {
+  /* border: 1px solid magenta; */
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.heading-container {
+  width: 50%;
+  margin: 0 auto;
+  /* text-align: center; */
+  /* border: 1px solid red; */
+}
+
+.heading-container h1 {
+  margin-bottom: 0;
+}
+
+.heading-container p {
+  margin-top: 0;
+}
+
+/* ------------------------- NAVIGATION -------------------------- */
+
+nav {
+  /* border: 1px solid black; */
+  width: 50%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+nav li {
+  list-style: none;
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+/* Adding underline to show in which page you are in and don't change color
+while hovering on it. */
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+/* ------------------------------------------------------------------------ */
+
+@media (max-width: 675px) {
+  .container-nav {
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5em 0;
+  }
+}
